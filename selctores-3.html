@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <style>
+        #container {
+            width: 90%;
+            display:flex;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background: #ca4487;
+            margin: 10px;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+        .item:hover{
+            background-color: blueviolet;
+        }
+        .item::first-letter{
+            color: rgb(92, 50, 35);
+        }
+        .item::after{
+            content: "🥠";
+        }
+        .item:nth-child(odd){
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+<div class="item">h</div>
+<div class="item">o</div>
+<div class="item">l</div>
+<div class="item">a</div>
+<div class="item">:)</div>
+    </div>
+</body>
+</html>
